@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05F4189E1F9E038D008EB00C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F4189D1F9E038D008EB00C /* MapKit.framework */; };
 		05F71A0A1F9CD2CF00A868B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F71A091F9CD2CF00A868B5 /* AppDelegate.swift */; };
 		05F71A0C1F9CD2CF00A868B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F71A0B1F9CD2CF00A868B5 /* ViewController.swift */; };
 		05F71A0F1F9CD2CF00A868B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F71A0D1F9CD2CF00A868B5 /* Main.storyboard */; };
 		05F71A111F9CD2CF00A868B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F71A101F9CD2CF00A868B5 /* Assets.xcassets */; };
 		05F71A141F9CD2CF00A868B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F71A121F9CD2CF00A868B5 /* LaunchScreen.storyboard */; };
+		05F71A1D1F9CD4A300A868B5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F71A1C1F9CD4A300A868B5 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05F4189D1F9E038D008EB00C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		05F71A061F9CD2CF00A868B5 /* LocationTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F71A091F9CD2CF00A868B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05F71A0B1F9CD2CF00A868B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		05F71A101F9CD2CF00A868B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05F71A131F9CD2CF00A868B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05F71A151F9CD2CF00A868B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05F71A1C1F9CD4A300A868B5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05F4189E1F9E038D008EB00C /* MapKit.framework in Frameworks */,
+				05F71A1D1F9CD4A300A868B5 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,7 @@
 			children = (
 				05F71A081F9CD2CF00A868B5 /* LocationTracking */,
 				05F71A071F9CD2CF00A868B5 /* Products */,
+				05F71A1B1F9CD4A300A868B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +69,15 @@
 				05F71A151F9CD2CF00A868B5 /* Info.plist */,
 			);
 			path = LocationTracking;
+			sourceTree = "<group>";
+		};
+		05F71A1B1F9CD4A300A868B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05F4189D1F9E038D008EB00C /* MapKit.framework */,
+				05F71A1C1F9CD4A300A868B5 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +279,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UQ37D35Z4Z;
 				INFOPLIST_FILE = LocationTracking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.ditapps.LocationTracking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +293,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UQ37D35Z4Z;
 				INFOPLIST_FILE = LocationTracking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.ditapps.LocationTracking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +320,7 @@
 				05F71A1A1F9CD2CF00A868B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
