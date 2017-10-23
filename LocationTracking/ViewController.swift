@@ -26,6 +26,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.requestAlwaysAuthorization()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
+        locationManager.startUpdatingHeading()
         
         // 지도에 현재 위치 마크를 보여줌
         myMapView.showsUserLocation = true
@@ -34,6 +35,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let coor = manager.location?.coordinate
         print("latitute" + String(describing: coor?.latitude) + "/ longitude" + String(describing: coor?.longitude))
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
+        let head = manager.heading?.magneticHeading
+        print("heading = \(String(describing: head))")
+        
+        let x = newHeading.x
+        let y = newHeading.y
+        let z = newHeading.z
+        print("x = \(x)  y = \(y)   z = \(z)")
     }
 
 }
